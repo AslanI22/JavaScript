@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <input type="checkbox" id="checkbox">
+    <button id="button">Изменить состояние</button>
+    
+    <script>
+        let checkbox = document.getElementById('checkbox');
+        let button = document.getElementById('button');
+    
+        button.addEventListener('click', function() {
+            checkbox.checked = !checkbox.checked;
+        });
+    </script>
+    
+    
+</html>
