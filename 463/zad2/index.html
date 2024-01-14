@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <div id="elem">
+        <p>This is a paragraph.</p>
+    </div>
+
+    <script>
+        // Получаем ссылку на элемент
+        var element = document.getElementById("elem");
+
+        // Проверяем, является ли элемент абзацем
+        var isParagraph = element.tagName.toLowerCase() === "p";
+
+        // Выводим результат в консоль
+        console.log("Элемент " + (isParagraph ? "является" : "не является") + " абзацем.");
+    </script>
+
+</body>
+
+</html>

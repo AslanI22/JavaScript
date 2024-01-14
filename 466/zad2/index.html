@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+  <table id="myTable" border="1">
+  </table>
+
+  <script>
+    let table = document.getElementById('myTable');
+
+    for (let i = 0; i < 10; i++) {
+      // Создаем новый ряд
+      let row = table.insertRow(i);
+
+      for (let j = 0; j < 5; j++) {
+        // Создаем новую ячейку в текущем ряду
+        let cell = row.insertCell(j);
+
+        // Добавляем текст в ячейку (пример: "Ряд 1, Колонка 1")
+        cell.textContent = 'Ряд ' + (i + 1) + ', Колонка ' + (j + 1);
+      }
+    }
+  </script>
+</body>
+
+</html>
